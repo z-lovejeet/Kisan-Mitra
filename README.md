@@ -1,7 +1,5 @@
 # 🌾 KisanMitra - Digital Agriculture Platform
 
-![KisanMitra Banner](https://images.unsplash.com/photo-1625246333195-58197bd47d26?auto=format&fit=crop&q=80&w=1200&h=400)
-
 **KisanMitra** (Farmer's Friend) is a comprehensive digital platform designed to empower Indian farmers with technology. It seamlessly connects farmers to marketplaces, government schemes, weather insights, and expert agricultural advice.
 
 ## 🚀 Features
