@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, Legend } from 'recharts';
-import { TrendingUp, TrendingDown, RefreshCw, Sprout, ShoppingBag, BrainCircuit } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
+import { TrendingUp, TrendingDown, Sprout, ShoppingBag, BrainCircuit } from 'lucide-react';
+
 
 // Mock Data Generators
 const generateTrendData = () => {
@@ -24,9 +24,8 @@ const generateDemandData = () => [
 ];
 
 export const TrendsPage: React.FC = () => {
-    const { t } = useLanguage();
     const [trendData, setTrendData] = useState(generateTrendData());
-    const [demandData, setDemandData] = useState(generateDemandData());
+    const [demandData] = useState(generateDemandData()); // Remove setDemandData
     const [liveTicker, setLiveTicker] = useState([
         { item: 'Wheat', price: 2450, change: 2.5, isUp: true },
         { item: 'Rice', price: 3100, change: -1.2, isUp: false },

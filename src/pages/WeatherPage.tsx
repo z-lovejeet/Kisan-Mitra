@@ -8,6 +8,7 @@ interface WeatherData {
         wind_speed_10m: number;
         weather_code: number;
         is_day: number;
+        precipitation: number;
     };
     daily: {
         time: string[];
@@ -60,7 +61,7 @@ export const WeatherPage: React.FC = () => {
                     setLocationName('Your Location');
                 }
             },
-            (err) => {
+            () => {
                 setError('Unable to retrieve your location. Showing default (New Delhi).');
                 // Default to New Delhi
                 fetchWeatherData(28.6139, 77.2090);
@@ -77,7 +78,7 @@ export const WeatherPage: React.FC = () => {
             const data = await response.json();
             setWeather(data);
             setLoading(false);
-        } catch (err) {
+        } catch {
             setError('Failed to fetch weather data');
             setLoading(false);
         }
