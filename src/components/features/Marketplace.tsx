@@ -5,14 +5,14 @@ import { products } from '../../data/mockData';
 
 export const Marketplace: React.FC = () => {
   return (
-    <section id="marketplace" className="py-20 bg-gray-50">
+    <section id="marketplace" className="py-10 md:py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <span className="text-emerald-600 font-semibold text-sm uppercase tracking-wider">Direct from Farm</span>
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mt-2">Crop Marketplace</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {products.map((product, index) => (
             <motion.div
               key={product.id}

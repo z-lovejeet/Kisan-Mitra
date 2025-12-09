@@ -9,12 +9,12 @@ export const MarketplacePage: React.FC = () => {
     const { isAuthenticated, user } = useAuth();
 
     return (
-        <div className="bg-slate-50 min-h-screen py-10 px-4">
+        <div className="bg-slate-50 min-h-screen py-6 md:py-10 px-4">
             <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
+                <div className="flex flex-col md:flex-row justify-between items-end mb-6 md:mb-8 gap-4">
                     <div>
-                        <h1 className="text-4xl font-bold text-gray-900 mb-2">Marketplace</h1>
-                        <p className="text-gray-600">Buy fresh produce directly from farmers across India.</p>
+                        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Marketplace</h1>
+                        <p className="text-sm md:text-base text-gray-600">Buy fresh produce directly from farmers across India.</p>
                     </div>
 
                     <div className="flex gap-2 w-full md:w-auto">

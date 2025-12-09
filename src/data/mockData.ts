@@ -25,7 +25,7 @@ export const products: Product[] = [
     quantity: "20 Quintals",
     location: "Maharashtra",
     price: 1200,
-    image: "https://images.unsplash.com/photo-1518977676601-b53f82ber40a?w=400&h=300&fit=crop",
+    image: "/tomato.jpg",
     type: "vegetable"
   }
 ];
