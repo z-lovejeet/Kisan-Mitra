@@ -65,7 +65,7 @@ export const TrendsPage: React.FC = () => {
             <div className="max-w-7xl mx-auto">
 
                 {/* Header Section */}
-                <div className="mb-8 p-6 bg-gradient-to-r from-emerald-900 to-green-800 rounded-3xl text-white shadow-xl relative overflow-hidden">
+                <div className="mb-8 p-4 md:p-6 bg-gradient-to-r from-emerald-900 to-green-800 rounded-3xl text-white shadow-xl relative overflow-hidden">
                     {/* Brain Circuit Decorative Background */}
                     <BrainCircuit className="absolute -right-10 -bottom-10 text-white/5 w-64 h-64" />
 
@@ -120,7 +120,7 @@ export const TrendsPage: React.FC = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="bg-white p-6 rounded-3xl shadow-lg border border-gray-100"
+                        className="bg-white p-4 md:p-6 rounded-3xl shadow-lg border border-gray-100"
                     >
                         <div className="flex justify-between items-center mb-6">
                             <div>
@@ -161,7 +161,7 @@ export const TrendsPage: React.FC = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="bg-white p-6 rounded-3xl shadow-lg border border-gray-100"
+                        className="bg-white p-4 md:p-6 rounded-3xl shadow-lg border border-gray-100"
                     >
                         <div className="flex justify-between items-center mb-6">
                             <div>

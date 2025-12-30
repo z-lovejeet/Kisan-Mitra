@@ -116,7 +116,7 @@ export const WeatherPage: React.FC = () => {
     return (
         <div className="min-h-screen bg-gradient-to-br from-emerald-50 to-teal-50 py-12 px-4">
             <div className="max-w-5xl mx-auto">
-                <div className="bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl overflow-hidden p-8 border border-white/50">
+                <div className="bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl overflow-hidden p-4 md:p-8 border border-white/50">
 
                     {/* Header */}
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-4">
@@ -138,7 +138,7 @@ export const WeatherPage: React.FC = () => {
                     </div>
 
                     {/* Main Current Weather */}
-                    <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+                    <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12">
                         <div className="text-center md:text-left relative">
                             <div className={`absolute top-0 left-0 w-32 h-32 ${currentInfo.bg} rounded-full blur-3xl -z-10`}></div>
                             <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-8">

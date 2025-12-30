@@ -18,8 +18,9 @@ export const Hero: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="text-white"
           >
@@ -28,11 +29,11 @@ export const Hero: React.FC = () => {
               <span className="text-sm font-medium">{t('hero.trusted')}</span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-6">
               {t('hero.title')}
             </h1>
 
-            <p className="text-lg md:text-xl text-emerald-100 mb-8 max-w-lg">
+            <p className="text-base md:text-xl text-emerald-100 mb-8 max-w-lg">
               {t('hero.subtitle')}
             </p>
 
@@ -63,7 +64,7 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative hidden lg:block"
+            className="relative block mt-12 lg:mt-0"
           >
             {/* Dashboard Mockup Image */}
             <motion.div
@@ -81,7 +82,7 @@ export const Hero: React.FC = () => {
               <motion.div
                 animate={{ y: [10, -10, 10], x: [5, -5, 5] }}
                 transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 1 }}
-                className="absolute -top-6 -right-6 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-3"
+                className="absolute -top-6 -right-2 md:-right-6 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-3"
               >
                 <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600">
                   <span className="text-xl">🌾</span>
@@ -96,7 +97,7 @@ export const Hero: React.FC = () => {
               <motion.div
                 animate={{ y: [-10, 10, -10], x: [-5, 5, -5] }}
                 transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 0.5 }}
-                className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-3"
+                className="absolute -bottom-6 -left-2 md:-left-6 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-3"
               >
                 <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
                   <span className="text-xl">🌦️</span>
@@ -111,6 +112,6 @@ export const Hero: React.FC = () => {
 
         </div>
       </div>
-    </section>
+    </section >
   );
 };

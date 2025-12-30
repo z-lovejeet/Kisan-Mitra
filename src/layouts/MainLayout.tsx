@@ -6,7 +6,7 @@ import { SOSButton } from '../components/features/SOSButton';
 
 export const MainLayout: React.FC = () => {
     return (
-        <div className="bg-slate-50 min-h-screen flex flex-col font-sans">
+        <div className="bg-slate-50 min-h-screen flex flex-col font-sans overflow-x-hidden">
             <Navbar />
             <main className="flex-grow pt-16">
                 <Outlet />
