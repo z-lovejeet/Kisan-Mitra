@@ -1,4 +1,4 @@
-# 🌾 KisanMitra - Digital Agriculture Platform
+# KisanMitra - Digital Agriculture Platform
 
 ![KisanMitra Banner](/public/hero-dashboard.png)
 
@@ -11,7 +11,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-cyan)
 
-## 🌟 Key Features
+## Key Features
 
 - **🛒 Digital Marketplace**: Direct line between farmers and buyers, eliminating middlemen.
 - **📈 Market Trends & Analytics**: AI-powered insights on crop prices, demand-supply gaps, and price forecasting using interactive charts.
@@ -21,7 +21,7 @@
 - **📱 Mobile Responsive**: Fully optimized for mobile devices with a fluid, app-like experience.
 - **🆘 SOS Emergency**: One-touch assistance for immediate help.
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Core
 - **Framework**: [React 18](https://react.dev/)
@@ -38,7 +38,7 @@
 - **Charts**: [Recharts](https://recharts.org/)
 - **State Management**: React Context API
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to set up the project locally.
 
@@ -69,7 +69,7 @@ Follow these steps to set up the project locally.
     npm run build
     ```
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 src/
@@ -81,7 +81,7 @@ src/
 └── types/        # TypeScript interfaces and types
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
